@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../projeto-css-html"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projeto-css-html"
+	}
+}
