@@ -1,54 +1,87 @@
 *{padding: 0; margin: 0; box-sizing: border-box;}
 
-/* */
+* {
+  box-sizing: border-box;
+}
 
 /* cabeçalho */
-.container{
-    background-color: #146A6C;
-    display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center; /* centraliza verticalmente */
-    height: 100px; /* define a altura da div para ocupar a altura da janela do navegador */
+header{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #146A6C;
+
+  color: #eee;
+  float:initial;
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  height: 100px; /* define a altura da div para ocupar a altura da janela do navegador */
+  border-bottom: 1px black solid;
 }
 
-#texto{
-    color: #eee;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+.logo {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
 }
+
 
 /* corpo */
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
+main{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .formulario {
     width: 900px;  /*largura da caixa de texto */
 
-    margin:50px; /* margem da area de navegação */
+    margin:90px; /* margem da area de navegação */
     padding: 30px; /* margem interna da caixa de texto*/
     border: 1px solid #ccc;
     border-radius: 50px;
     background-color: #DBDFDC;
+    position:relative;
+    top: 50%;
+    bottom: 50%;
 
   }
 
   section{
     position:relative;
-    right: -50%;
-    left: 50%;
+    display: flex;
     top: 50%;
     bottom: 50%;
-  
+    left: 0 auto;
+    right: 0 auto;
   }
 
   h2 {
-        text-align: center; /* alinhamento de texto */
-        margin-bottom: 20px; /* magem inferior */
+    text-align: center; /* alinhamento de texto */
+    margin-bottom: 20px; /* magem inferior */
   }
   
   form {
-        display: grid;
-        margin: 50px;
-        
+    display: grid;
+    margin: 50px;
+ 
   }
   
   label {
@@ -100,4 +133,48 @@ button {
   right: -50%;
   top: 50%;
   transform: translateY(10%);
+}
+
+/* rodapé */
+
+
+footer {
+   display: flex; /* para transformar os elementos do rodapé em um container flexível.  */
+  flex-wrap: wrap; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+  justify-content: space-between; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+  padding: 20px; 
+  background-color:#146A6C;
+  color: #eee;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
+
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.coluna {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.coluna01 {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
 }
