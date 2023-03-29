@@ -7,29 +7,40 @@
 /* cabeçalho */
 header{
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #146A6C;
 
   color: #eee;
-  float:initial;
+  /* float:initial; */
   font-size: 24px;
   font-weight: bold;
 
-  display: flex;
+  display:flex;
   justify-content: center; /* centraliza horizontalmente */
-  align-items: center; /* centraliza verticalmente */
   height: 100px; /* define a altura da div para ocupar a altura da janela do navegador */
-  border-bottom: 1px black solid;
+  border-bottom: 2px black solid;
 }
 
+.cadastro {
+  position: relative;
+  height: 100vh;
+}
 .logo {
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.frase {
+  position:absolute;
+  bottom: 0;
+  top: 25px;
+  right: 50px;
 }
 
+#titulo{
+  position: flex;
 
+}
 /* corpo */
 
 body {
@@ -139,20 +150,20 @@ button {
 
 
 footer {
-   display: flex; /* para transformar os elementos do rodapé em um container flexível.  */
+  display: flex; /* para transformar os elementos do rodapé em um container flexível.  */
   flex-wrap: wrap; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
   justify-content: space-between; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
   padding: 20px; 
   background-color:#146A6C;
   color: #eee;
   width: 100%;
-  max-width: 1200px;
   margin: 10px auto;
+  border-top: 2px solid black;
 
-  padding: 20px;
+  /* padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
 
 }
 
