@@ -175,6 +175,7 @@ footer {
   width: 20%;
   margin-bottom: 20px;
   text-align: center;
+  justify-content: space-between;
 }
 
 h4 {
