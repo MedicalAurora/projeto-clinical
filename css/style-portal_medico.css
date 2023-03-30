@@ -5,48 +5,38 @@
 }
 
 /* cabeçalho */
-header{
-  width: 100%;
-  margin: 0 auto;
-  background-color: #146A6C;
 
-  color: #eee;
-  /* float:initial; */
-  font-size: 24px;
-  font-weight: bold;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #DBDFDC;
+    height: 175px;
+  }
+  
+  .logo-container {
+    display: flex;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .texto-container p {
+    margin: 0;
+    color: black;
+    font-size: 40px;
+    font-weight:bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
 
-  display:flex;
-  justify-content: center; /* centraliza horizontalmente */
-  height: 100px; /* define a altura da div para ocupar a altura da janela do navegador */
-  border-bottom: 2px black solid;
-}
-
-.cabecalho {
-  object-position: left;
-  position:flex;
-  left: 10px;
-
-}
-.logo {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
-.nome-emp {
-  position: absolute;
-  centro: 0;
-}
-.frase {
-  position:absolute;
-  bottom: 0;
-  top: 25px;
-  right: 50px;
-}
-
-#titulo{
-  position: flex;
-
-}
 /* corpo */
 
 body {
