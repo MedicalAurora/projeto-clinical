@@ -1,0 +1,94 @@
+*{padding: 0; margin: 0; box-sizing: border-box}
+
+#cabeçalho{
+    display:flex;
+    align-items: center;
+    background-color: #146A6C;
+    justify-content:flex-start;
+}
+
+#titulo{
+    width: 100%;
+    float: left;
+    order: 2;
+}
+/
+#img{
+    float: right;
+    order
+}
+
+#info{
+    background-color: #DBDFDC;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #146A6C;
+    color: #fff;
+    padding: 15px;
+    border-radius: 100px;
+    transition: 5ms;
+}
+
+.btn:hover{
+    background-color: #199CAF;
+
+
+}
+  footer {
+    display: flex; /* para transformar os elementos do rodapé em um container flexível.  */
+   flex-wrap: wrap; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+   justify-content: space-between; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+   padding: 20px; 
+   background-color:#146A6C;
+   color: #eee;
+   width: 100%;
+   
+   margin: 100px auto;
+ 
+   padding: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ 
+ }
+ 
+ .coluna {
+   width: 25%;
+   margin-bottom: 20px;
+ }
+ .coluna01 {
+   width: 20%;
+   margin-bottom: 20px;
+   text-align: center;
+ }
+ 
+ h4 {
+   margin-bottom: 10px;
+   font-size: 25px;
+ }
+ 
+ ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   font-size: 15px;
+   line-height: 1.5;
+ }
+ 
+ 
+
+
+ 
