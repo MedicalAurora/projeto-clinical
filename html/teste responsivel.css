@@ -6,60 +6,84 @@
 	padding: 0;
 }
 
+/* Estilos para o cabeçalho */
 header {
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 10px;
+background-color: #333;
+color: #fff;
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
+/* Estilos para o logotipo */
+header img {
+height: 50px;
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav li {
+margin: 0 10px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+}
+
+/* Estilos para o corpo da página */
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.left-column {
+.left-column { /* coluna esqeurda */
 	flex: 1;
-  height: 200px;
-  width: 500px;
-  max-width: 500px;
-  
+  height: 745px;
+  width: 300px;
+  max-width: 450px;
 }
 
-.right-column {
+.right-column { /* coluna direita */
   flex: 1;
-  width: calc((100% - 400px) / 2);
-  height: 100%;
-  background-color: #f5f5f5;
+  width: 790px; /* largura da coluna */
+  height: 900px; /* laltura da coluna */
+  background-image: url(../img/image\ 12.png);
+  background-size:cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 50px;
-}
-.right-column {
-  /* ... outras propriedades ... */
   position: absolute;
-  top: calc(30% + 10px); 
-  right: 1px;
-  width: 600px;
-  height: 300px;
-  padding: 90px;
+  top: calc(0% + 70px); 
+  right: 0px;
   text-align: center;
   border-radius: 20px;
+  flex-direction: ro;
+  padding: 5px;
 }
-
 
 .card {
 	background-color:aqua;
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-  
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-
 .right-card {
-  background-color: #f2f2f2;
+  background-color: yellow;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 50px;
@@ -68,61 +92,24 @@ header {
   box-sizing: border-box;
 }
 
-..
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.left-column {
-  flex: 1;
-  /* width: 500px; */
-  max-width: 500px;
-}
-
-.right-column {
-  flex: 1;
-  width: calc((100% - 500px) / 2);
-  height: 100%;
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: ro;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  text-align: center;
-}
-
 .big-card {
-  width: 70%;
+  width: 80%;
   margin-right: 30px;
+  background-color: chartreuse;
 }
 
-.small-card {
-  width: 30%;
+.small-card-a {
+  width: 90%;
+  margin-right: 60px;
+  background-color: aqua;
 }
-big
+
+.small-card-b {
+  width: 30%;
+  margin-right: 60px;
+  background-color: purple;
+}
+
 .card h2 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -142,4 +129,117 @@ big
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f7f7f7;
+margin: 0;
+padding: 0;
+}
+
+
+/* Estilos para a seção principal */
+main {
+margin: 20px;
+}
+
+h1 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.imagem-texto {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.imagem-texto img {
+width: 200px;
+margin-right: 20px;
+}
+
+/* Estilos para o rodapé */
+
+.caixa-externa {
+  background-color: red;
+  padding: 20px;
+  border-radius: 20px;
+  height: 745px;
+}
+
+.caixa-interna {
+  background-color: blue;
+  padding: 20px;
+  height: 140px;
+  border: 1px solid #008775;
+  border-radius: 10px;
+  box-shadow: 0 0 10px royalblue;
+}
+
+.caixa-externa2 {
+  background-color: red;
+  padding: 20px;
+}
+
+.caixa-interna2 {
+  background-color: blue;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.caixa-interna {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coluna {
+  flex-basis: 45%;
+}
+
+.barra-vertical {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 20px;
+}
+
+/* rodapé */
+
+footer {
+  display: flex; /* para transformar os elementos do rodapé em um container flexível.  */
+  flex-wrap: wrap; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+  justify-content: space-between; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+  padding: 20px; 
+  background-color:#146A6C;
+  color: #eee;
+  width: 100%;
+  margin: 10px auto;
+  border-top: 2px solid black;
+
+}
+
+.coluna-foot {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.coluna01-foot {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
 }
