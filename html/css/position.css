@@ -1,0 +1,17 @@
+*{margin:0;padding: 0; box-sizing: border-box;}
+
+#conteudo{
+    background-color: magenta;
+    width: 600px;
+    height: 600px;
+    
+}
+
+#texto{
+    background-color: bisque;
+    width: 500px;
+    position: absolute;
+    right: 500px;
+    top: 100px;
+    
+}
