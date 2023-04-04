@@ -1,0 +1,191 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+* {
+  box-sizing: border-box;
+}
+
+/* cabeçalho */
+header{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #146A6C;
+
+  color: #eee;
+  /* float:initial; */
+  font-size: 24px;
+  font-weight: bold;
+
+  display:flex;
+  justify-content: center; /* centraliza horizontalmente */
+  height: 100px; /* define a altura da div para ocupar a altura da janela do navegador */
+  border-bottom: 2px black solid;
+}
+
+.cabecalho {
+  object-position: left;
+  position:flex;
+  left: 10px;
+
+}
+.logo {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.nome-emp {
+  position: absolute;
+  centro: 0;
+}
+.frase {
+  position:absolute;
+  bottom: 0;
+  top: 25px;
+  right: 50px;
+}
+
+#titulo{
+  position: flex;
+
+}
+/* corpo */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulario {
+    width: 900px;  /*largura da caixa de texto */
+
+    margin:90px; /* margem da area de navegação */
+    padding: 30px; /* margem interna da caixa de texto*/
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #DBDFDC;
+    position:relative;
+    top: 50%;
+    bottom: 50%;
+  }
+
+  section{
+    position:relative;
+    display: flex;
+    top: 50%;
+    bottom: 50%;
+    left: 0 auto;
+    right: 0 auto;
+  }
+
+  h2 {
+    text-align: center; /* alinhamento de texto */
+    margin-bottom: 20px; /* magem inferior */
+  }
+  
+  form {
+    display: grid;
+    margin: 50px;
+  }
+  
+  label {
+    margin-bottom: 10px; /* espaçamento ente linhas do formulario*/
+  }
+  
+  input[type="text"], 
+  input[type="email"],
+  input[type="password"] {
+    width: 350px;
+    padding: 15px; /* altura da linha */
+    border-radius: 5px;  /*  aredondamento da linha */
+    border: 1px solid #ccc; /* borda interna da linha*/
+    margin-bottom: 10px; /* margem inferior da linha */
+  }
+  
+  button {
+    width: 300px;
+    height: 50px;
+
+    font-size: 25px;
+    background-color: #146A6C;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .coluna-1 {
+    grid-column: 1 / 2;
+  }
+  
+  .coluna-2 {
+    grid-column: 2 / 3;
+  }
+  
+  .div-form {
+    position: relative;
+  display: inline-block;
+}
+
+button {
+  position:relative;
+  right: -50%;
+  top: 50%;
+  transform: translateY(10%);
+}
+
+/* rodapé */
+
+
+footer {
+  display: flex; /* para transformar os elementos do rodapé em um container flexível.  */
+  flex-wrap: wrap; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+  justify-content: space-between; /* para permitir que as colunas sejam divididas em várias linhas quando o espaço horizontal for insuficiente.  */
+  padding: 20px; 
+  background-color:#146A6C;
+  color: #eee;
+  width: 100%;
+  margin: 10px auto;
+  border-top: 2px solid black;
+
+}
+
+.coluna {
+  width: 25%;
+  margin-bottom: 20px;
+}
+.coluna01 {
+  width: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
