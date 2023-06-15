@@ -1,0 +1,1 @@
+alert("Bem-vindo a tela do administrador!")

@@ -1,84 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>tela administrador</title>
-    <link rel="stylesheet" href="../css/tela-administrador.css ">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>tela administrador</title>
+  <link rel="stylesheet" href="../css/tela-administrador.css ">
 </head>
+
 <body>
 
-<!-- cabeçalho -->
-    <div id="cabeçalho">
-        <div id="titulo">
-            <h1>Medical Aurora</h1>
-        </div>
-        <div id="img">
-            <img src="../img/Component 9.png" alt="Medical Aurora">
-        </div>
+  <!-- cabeçalho -->
+  <div id="cabeçalho">
+    <div id="titulo">
+      <h1>Medical Aurora</h1>
+    </div>
+    <div id="img">
+      <img src="../img/Component 9.png" alt="Medical Aurora">
+    </div>
 
-        <div id="portal">
-            <h2>Portal do administrador</h2>
-        </div>
-    </div><hr>
 
-<!-- container -->
-<div id="container">
-    <div id="cancelar">
-        <a href="#" class="btn">Cancelar atendimento</a>
-    </div><br><br>
+
+    <div class="cancelar">
+      <a class="btn" href="tela-agendamento.html">Cancelar</a>
+    </div>
 
     <div id="agendar">
-        <a href="#" class="btn">Agendar atendimento</a>
-    </div><br><br>
-
-    <div id="cadastrar">
-        <a href="#" class="btn">Cadastrar</a>
+      <a class="btn" href="tela-de-agendamento.html">Agendar</a>
     </div>
-</div>
-
-<!-- rodapé -->
-    <footer>
-        <div class="coluna">
-          <h4>Fale Conosco</h4>
-          <ul>
-            <p>Telefone: (19) 3873-3462</p>
-            <p>whatsapp: (19) 3731-342</p>
-            <p id="linha-email">Email: medical_aurora_sumare@gmail.com
-          </ul>
-        </div>
-    
-        <div class="coluna">
-          <h4>Unidades</h4>
-          <ul>
-           <p>Campinas</p>
-           <p>Sumaré</p>
-           <p>Hortolândia</p>
-          </ul>
-        </div>
-    
-        <div class="coluna">
-          <h4>Redes Sociais</h4>
-          <ul>
-            <div id="img2">
-              <img src="../img/logos_whatsapp-icon.png" alt="whatsapp" width="30px" height="30px">
-              <img src="../img/logos_facebook.png" alt="facebook" width="30px" height="30px">
-              <img src="../img/skill-icons_instagram.png" alt="facebook" width="30px" height="30px">
-          </div>  
-          </ul>
-        </div>
-        
-        <div class="coluna01">
-          <h4>Medical Aurora</h4>
-          <ul>
-            <p>Todos os direitos reservados</p>
-            <p>Plano Hospital Medical Aurora Ltda</p>
-            <p>CNPJ:45.235.764/0001-67</p>
-          </ul>
-        </div>
-      </footer>
+    <hr>
 
 
+    <div class="dropdown">
+      <a class="dropbtn">Cadastrar</a>
+      <div class="dropdown-content">
+        <a href="tela-cadastro-paciente.html">PACIENTE</a>
+        <a href="tela-cadastro-médico.html">MÉDICO</a>
+        <a href="tela-cadastro-administrador.html">ADMINISTRADOR</a>
+      </div>
+    </div>
+
+    <a href="home.html" class="back-button">Home</a>
+
+  </div><br><br><br><br><br><br><br><br>
+
+  <!-- container -->
+  <div id="frase">
+    <h1>MAIS DO QUE SAÚDE,<BR>
+      BEM ESTAR PARA<BR>
+      SUA FAMILIA!</h1>
+  </div>
+
+  <!-- rodapé -->
+  <footer>
+    <div class="coluna">
+      <h4>Fale Conosco</h4>
+      <ul>
+        <p>Telefone: (19) 3873-3462</p>
+        <p>whatsapp: (19) 3731-342</p>
+        <p id="linha-email">Email: medical_aurora_sumare@gmail.com
+      </ul>
+    </div>
+
+    <div class="coluna">
+      <h4>Unidades</h4>
+      <ul>
+        <p>Campinas</p>
+        <p>Sumaré</p>
+        <p>Hortolândia</p>
+      </ul>
+    </div>
+
+    <div class="coluna">
+      <h4>Redes Sociais</h4>
+      <ul>
+        <div id="img2">
+          <img src="../img/logos_whatsapp-icon.png" alt="whatsapp" width="30px" height="30px">
+          <img src="../img/logos_facebook.png" alt="facebook" width="30px" height="30px">
+          <img src="../img/skill-icons_instagram.png" alt="facebook" width="30px" height="30px">
+        </div>
+      </ul>
+    </div>
+
+    <div class="coluna01">
+      <h4>Medical Aurora</h4>
+      <ul>
+        <p>Todos os direitos reservados</p>
+        <p>Plano Hospital Medical Aurora Ltda</p>
+        <p>CNPJ:45.235.764/0001-67</p>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../tela-administrador.js"></script>
 </body>
 </html>
